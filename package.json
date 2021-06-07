@@ -2,7 +2,7 @@
   "name": "mercado-libre-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://willibautista.github.io/mercado-libre-app",
+  "homepage": ".",
   "repository": {
     "type": "git",
     "url": "https://github.com/WilliBautista/mercado-libre-app",
