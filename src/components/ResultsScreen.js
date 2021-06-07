@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import queryString from 'query-string';
 import { Header } from './Header';
 import { useFetch } from '../hooks/useFetch';
 import { SearchGrid } from './SearchGrid';
 import { Breadcrumbs } from './Breadcrumbs';
 
-export const ResultsScreen = ({ location }) => {
+export const ResultsScreen = ({ location, history }) => {
   const { search } = queryString.parse(location.search);
   const { loading, data } = useFetch(`api/items?q=${search}`, search);
   const categories = data ? data.categories : false;
+
+  useEffect(() => {
+    if (!search) history.push("/");
+  }, [search, history]);
 
   return (
     <>

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ContentLoader from "react-content-loader";
 
 export const SkeletonProductDetails = (props) => {
+
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <div className="product-detail main__wrapper row center-sm col-xs-11 col-sm-10">
       <ContentLoader

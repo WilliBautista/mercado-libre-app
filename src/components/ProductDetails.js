@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { SimpleSlider } from "./SimpleSlider";
@@ -23,6 +23,8 @@ export const ProductDetails = ({ item }) => {
     arrows: false,
     className: "product-details__slider",
   };
+
+  useEffect(() => window.scrollTo(0, 0), []);
 
   for (let i = 0; i < pictures.length; i++) {
     const image = pictures[i];

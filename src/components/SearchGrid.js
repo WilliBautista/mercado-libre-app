@@ -20,6 +20,9 @@ export const SearchGrid = ({
     <div className={`${classBlock} ${ classModifier } ${className}`}>
       <ol className={`${classBlock}__list`}>
         {
+          items.length < 1 && <li>No se encontraron resultados</li>
+        }
+        {
           loading
             ? isMobile
               ? <SkeletonSearchItemMobile className={`${classBlock}`} speed={1.5} />

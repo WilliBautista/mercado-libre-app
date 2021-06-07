@@ -1,0 +1,25 @@
+/// Error pages
+/// 404
+.error-page {
+  > div {
+    text-align: center;
+  }
+
+  &--404 {
+    padding: szrem(50) 0;
+
+    h1 {
+      @include text(szrem(40));
+      margin-bottom: $space2;
+    }
+
+    h2 {
+      @include text(szrem(20));
+      margin-bottom: $space2;
+    }
+  }
+
+  a {
+    margin: 0 auto;
+  }
+}

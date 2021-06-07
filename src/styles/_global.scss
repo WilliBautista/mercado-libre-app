@@ -8,13 +8,9 @@
 }
 
 body,
-html {
-  min-height: 100vh;
-  min-width: 100%;
-}
-
+html,
 .root {
-  min-height: calc(100vh - 54px);
+  min-height: 100vh;
   min-width: 100%;
 }
 

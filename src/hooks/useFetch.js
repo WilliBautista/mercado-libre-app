@@ -6,7 +6,7 @@ export const useFetch = (endpoint, param) => {
   const isMounted = useRef(true);
   const [jsonData, setJsonData] = useState({
     loading: true,
-    error: null,
+    error: false,
     data: null,
   });
 
@@ -17,7 +17,7 @@ export const useFetch = (endpoint, param) => {
   useEffect(() => {
     setJsonData({
       loading: true,
-      error: null,
+      error: false,
       data: null,
     });
 
@@ -30,14 +30,14 @@ export const useFetch = (endpoint, param) => {
         .then(data => {
           setJsonData({
             loading: false,
-            error: null,
+            error: false,
             data,
           });
         })
         .catch(() => {
           setJsonData({
-            loading: false,
-            error: "No es posible obtener la información.",
+            loading: true,
+            error: true,
             data: null,
           });
         });
