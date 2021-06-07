@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import PropTypes from 'prop-types';
 const baseUrl = process.env.REACT_APP_API_URL;
 
+console.log(baseUrl);
+
 export const useFetch = (endpoint, param) => {
   const isMounted = useRef(true);
   const [jsonData, setJsonData] = useState({
