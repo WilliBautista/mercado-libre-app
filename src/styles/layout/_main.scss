@@ -1,0 +1,17 @@
+///
+/// Main element
+.main {
+  margin-bottom: $space1;
+  padding-top: $space1;
+
+  &.home-page {
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .main__wrapper {
+    background-color: $white;
+    border-radius: $border-radius1;
+  }
+}
+

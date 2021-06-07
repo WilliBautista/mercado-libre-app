@@ -1,0 +1,106 @@
+//
+// Mixins
+
+/// Breakpoints
+/// Mayor que $bp
+@mixin from($bp) {
+  @media screen and (min-width: $bp) {
+    @content;
+  }
+}
+
+/// Menor que $bp
+@mixin to($bp) {
+  @media screen and (max-width: $bp) {
+    @content;
+  }
+}
+
+/// Dimensiones
+/// Alto y ancho
+@mixin size($width : auto, $height : auto) {
+  width: $width;
+  height: $height;
+}
+
+/// Mismas dimensiones
+@mixin esize($size) {
+  @include size($size, $size);
+}
+
+/// Font
+/// Text
+@mixin text($fontsize: var(--base-font-size), $lineheight: false, $fontfamily: $proximaNova) {
+  font-family: $fontfamily;
+  font-size: $fontsize;
+
+  @if $lineheight {
+    line-height: $lineheight;
+  } @else {
+    line-height: $fontsize;
+  }
+}
+
+/// Form controls
+/// Inpputs
+@mixin form-control-base($height, $fontsize, $padding) {
+  @include size(100%, $height);
+  appearance: none;
+  border: 0;
+  border-radius: $border-radius1;
+  color: $color2;
+  display: block;
+  font-size: $fontsize;
+  padding: $padding;
+  outline: none;
+
+  &::placeholder {
+    color: $color4;
+  }
+
+  &::-moz-placeholder {
+    color: $color4;
+  }
+
+  &::-ms-placeholder {
+    color: $color4;
+  }
+}
+
+/// Buttons
+@mixin btn-base {
+  appearance: none;
+  align-items: center;
+  border: 0;
+  border-radius: $border-radius1;
+  cursor: pointer;
+  display: flex;
+  font-size: inherit;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin btn-variant($background, $color, $border) {
+  background-color: $background;
+  color: $color;
+  border-color: $color;
+  fill: $color;
+
+  &:hover {
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);
+    color: $color;
+  }
+}
+
+/// Accesibility
+/// Hide content
+@mixin visually-hidden {
+  position: absolute !important;
+  padding: 0!important;
+  margin: -1px!important;
+  overflow: hidden!important;
+  clip: rect(0,0,0,0)!important;
+  white-space: nowrap!important;
+  border: 0!important;
+}

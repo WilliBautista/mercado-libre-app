@@ -1,0 +1,22 @@
+.breadcrumb {
+  margin-bottom: $space1;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    color: $color4;
+
+    svg {
+      margin: 0 5px;
+    }
+
+    &:last-child {
+      font-family: $proximaNovaBold;
+    }
+  }
+}

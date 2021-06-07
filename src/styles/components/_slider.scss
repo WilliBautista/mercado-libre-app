@@ -1,0 +1,15 @@
+/// Slick slider
+/// Internal page od product details
+.product-details__slider {
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}
