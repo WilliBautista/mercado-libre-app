@@ -2,6 +2,12 @@
   "name": "mercado-libre-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://willibautista.github.io/mercado-libre-app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WilliBautista/mercado-libre-app",
+    "directory": "docs"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -21,6 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
   }
 }
