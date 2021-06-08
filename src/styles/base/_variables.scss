@@ -5,6 +5,7 @@
 $images-path : '../../assets/images';
 
 // COLORS
+//Hexadecimal
 $white  : #FFFFFF;
 $black  : #000000;
 $color1 : #FFE600;
@@ -13,6 +14,9 @@ $color3 : #666666;
 $color4 : #999999;
 $color5 : #EEEEEE;
 $color6 : #3483FA;
+
+// rgba
+$rgba1  : rgba($color1, .5);
 
 // Fonts
 $proximaNova        : 'Proxima Nova Regular', arial, sans-serif, helvetica;

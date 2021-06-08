@@ -12,6 +12,7 @@
   font-size: var(--base-font-size);
   height: 35px;
   max-width: 320px;
+  transition: all .3s ease;
 
   @include from($sm-start) {
     height: 40px;
@@ -21,6 +22,14 @@
 // Button with icon
 .btn-icon {
   align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.back-to-top {
+  @include esize(42px);
+  align-items: center;
+  background: $rgba1 !important;
   display: flex;
   justify-content: center;
 }

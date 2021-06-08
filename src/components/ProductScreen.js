@@ -17,7 +17,7 @@ export const ProductScreen = ({ match, history }) => {
   return (
     <>
       <Header />
-      <main className="main container" id="main">
+      <main className="main container animate__animated animate__fadeIn" id="main">
         <h1 className="visually-hidden">Detalle de producto</h1>
         {
           loading

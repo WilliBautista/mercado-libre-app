@@ -43,7 +43,7 @@ export const ProductDetails = ({ item }) => {
   }
 
   return (
-    <div className="product-detail main__wrapper row center-sm col-xs-11 col-sm-10">
+    <div className="product-detail main__wrapper row center-sm col-xs-11 col-sm-10 animate__animated animate__fadeIn">
       <div className="product-detail__top row">
         <div className="product-detail__images col-xs-12 col-md-9">
           <SimpleSlider elements={imageComponents} slickOptions={options} />
@@ -73,7 +73,7 @@ export const ProductDetails = ({ item }) => {
       </div>
       <div className="product-detail__bottom row start-sm">
         <h2>Descripción del producto</h2>
-        <div className="product-details__description col-xs-12 col-md-9 col-gutter-lr">
+        <div className="product-detail__description col-xs-12 col-md-9 col-gutter-lr">
           {newlineText(item.description)}
         </div>
       </div>

@@ -7,7 +7,7 @@ export const SearchItem = ({ items, className }) => {
     <>
       {
         items.map((item) => (
-          <li key={item.id} className={`${className}__item item`}>
+          <li key={item.id} className={`${className}__item item animate__animated animate__fadeIn`}>
             <Link
               aria-label={ item.title }
               className="row center-xs"

@@ -17,14 +17,11 @@ export const ResultsScreen = ({ location, history }) => {
   return (
     <>
       <Header />
-      <main className="main container row center-xs">
+      <main className="main container row center-xs animate__animated animate__fadeIn">
         <h1 className="visually-hidden">Página de resultados</h1>
         {
           categories.length
-            ? <Breadcrumbs
-              breadcrumbs={ categories }
-              loading={ loading }
-            />
+            ? <Breadcrumbs breadcrumbs={ categories } loading={ loading } />
             : false
         }
         <SearchGrid

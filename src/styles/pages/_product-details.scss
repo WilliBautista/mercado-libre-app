@@ -41,4 +41,8 @@
     margin-bottom: $space2;
     padding-left: $gutter;
   }
+
+  &__description {
+    word-break: break-word;
+  }
 }
