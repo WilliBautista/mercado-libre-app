@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://willibautista.github.io/mercado-libre-app/static/css/main.3e031161.chunk.css",
-    "main.js": "https://willibautista.github.io/mercado-libre-app/static/js/main.f2898866.chunk.js",
-    "main.js.map": "https://willibautista.github.io/mercado-libre-app/static/js/main.f2898866.chunk.js.map",
+    "main.js": "https://willibautista.github.io/mercado-libre-app/static/js/main.37e1f4bd.chunk.js",
+    "main.js.map": "https://willibautista.github.io/mercado-libre-app/static/js/main.37e1f4bd.chunk.js.map",
     "runtime-main.js": "https://willibautista.github.io/mercado-libre-app/static/js/runtime-main.45cc952f.js",
     "runtime-main.js.map": "https://willibautista.github.io/mercado-libre-app/static/js/runtime-main.45cc952f.js.map",
     "static/css/2.f5f0878c.chunk.css": "https://willibautista.github.io/mercado-libre-app/static/css/2.f5f0878c.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.f5f0878c.chunk.css",
     "static/js/2.ef89a311.chunk.js",
     "static/css/main.3e031161.chunk.css",
-    "static/js/main.f2898866.chunk.js"
+    "static/js/main.37e1f4bd.chunk.js"
   ]
 }
