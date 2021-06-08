@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types';
 import { RiArrowRightSLine } from "react-icons/ri";
 
-export const Breadcrumbs = ({ breadcrumbs, loading }) => {
-
+export const Breadcrumbs = ({ breadcrumbs }) => {
   return (
     <div className="breadcrumb col-xs-11 col-sm-10 col-no-gutter">
       <ul className="breadcrumb__list">
@@ -21,6 +20,5 @@ export const Breadcrumbs = ({ breadcrumbs, loading }) => {
 }
 
 Breadcrumbs.propTypes = {
-  breadcrumbs: PropTypes.array.isRequired,
-  loading: PropTypes.bool.isRequired
+  breadcrumbs: PropTypes.array.isRequired
 };
